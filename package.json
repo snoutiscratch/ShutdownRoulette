@@ -5,7 +5,7 @@
     "astro"
   ],
   "scripts": {
-    "dev": "concurrently \"npm:dev:astro\" \"npm:dev:electron\"",
+    "dev": "concurrently --raw --kill-others \"npm:dev:astro\" \"npm:dev:electron\"",
     "dev:astro": "cd astro && npm run dev",
     "dev:electron": "wait-on http://localhost:4321 && electron electron/main.js",
     "build": "npm run build:astro && npm run build:electron",
