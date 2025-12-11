@@ -7,12 +7,12 @@
 }
 
 body {
-    height: 96vh;
+    height: 100vh;
     font-family: monospace;
 
     color: var(--color-text);
     background-color: var(--color-background);
-    text-shadow: .1em .1em .69rem black;
+    text-shadow: .3em .3em .42rem black;
 
     /*Center contents*/
     display: flex;
@@ -25,6 +25,21 @@ body {
 body a {
     color: var(--color-accent);
     text-decoration: none;
+}
+
+.llama {
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    width: auto;
+    height: 83%;
+}
+
+
+.scorekeeper {
+    text-align: center;
 }
 
 .leaderboard {

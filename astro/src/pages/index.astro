@@ -8,11 +8,16 @@ import BaseLayout from "../layouts/base.astro"
         <script type="module" src="/scripts/roulette.ts"></script>
     </Fragment>
 
-    <h3><a href="/leaderboard">See Leaderboard</a></h3>
+    <div class="scorekeeper">
+        <h2>High Score: 0</h2>
+        <h3><a href="/leaderboard">See highscores</a></h3>
+    </div>
 
     <div id="rounds">
         <h1>You Survived 0 Rounds! :3333</h1>
     </div>
+
+    <img class="llama", src="/img/shutdownllama.png">
 
     <p>PULL THE TRIGGER! >:3 <strong>(Space)</strong></p>
 </BaseLayout>
