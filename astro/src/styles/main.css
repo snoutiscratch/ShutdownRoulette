@@ -11,7 +11,8 @@ body {
     font-family: monospace;
 
     color: var(--color-text);
-    background-color: var(--color-background);
+    background-image: url("/img/background.png");
+    background-size: cover;
     text-shadow: .3em .3em .42rem black;
 
     /*Center contents*/
