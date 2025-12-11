@@ -1,0 +1,27 @@
+---
+import BaseLayout from "../layouts/Base.astro"
+import Leaderboard from "../components/Leaderboard.astro"
+import "../styles/bang.css";
+---
+
+<BaseLayout>
+    <Fragment slot="head">
+        <title>You Lost Shutdown Roulette ;-;</title>
+        <script type="module" src="/scripts/roulette.ts"></script>
+    </Fragment>
+
+    <div id="game-over">
+        <h1>BANG!!! 33:</h1>
+        <h2>Final Score:</h2>
+    </div>
+
+    <div>
+        <Leaderboard/>
+    </div>
+
+
+
+    <div>
+        <p>Your system will shut down shortly.</p>
+    </div>
+</BaseLayout>

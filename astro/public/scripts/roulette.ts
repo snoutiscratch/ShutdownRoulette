@@ -6,7 +6,9 @@ function pullTrigger() {
 
     console.log(barrel);
     if(barrel === 6) {
+        window.location.href = "/bang";
         window.api.shutdown();
+        return;
     }
 
     // Update round counter
