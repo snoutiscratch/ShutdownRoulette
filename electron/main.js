@@ -10,6 +10,9 @@ function createWindow() {
         webPreferences: {
             preload: path.join(__dirname, "preload.js"),
         },
+
+        autoHideMenuBar: true,
+        menuBarVisible: false
     });
 
     if (isDev) {
