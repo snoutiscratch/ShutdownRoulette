@@ -1,27 +1,36 @@
 :root {
-    --color-background: #111;
+    --color-background: rgba(70, 0, 0, 0.83);
     --color-text: #eee;
-    --color-accent: #ff4444;
+    --color-accent: #b7b7b7;
     --color-button: #333;
     --color-button-hover: #555;
 }
 
-
 body {
+    height: 96vh;
     font-family: monospace;
 
     color: var(--color-text);
     background-color: var(--color-background);
+    text-shadow: .1em .1em .69rem black;
 
     /*Center contents*/
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+    justify-content: space-between;
     flex-direction: column;
+    align-items: center;
+    margin: 0;
 }
 
-#rounds {
+body a {
+    color: var(--color-accent);
+    text-decoration: none;
+}
+
+.leaderboard {
+
+}
+
+.leaderboard ol {
 
 }
