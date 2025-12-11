@@ -1,5 +1,6 @@
-const {app, BrowserWindow} = require("electron");
+const { app, BrowserWindow, ipcMain } = require("electron");
 const path = require("path");
+const { exec } = require("child_process");
 
 const isDev = !app.isPackaged;
 
@@ -28,4 +29,23 @@ app.whenReady().then(createWindow);
 
 app.on("window-all-closed", () => {
     if (process.platform !== "darwin") app.quit();
+});
+
+// Shutdown call
+ipcMain.handle("shutdown", async () => {
+    try {
+        // Linux
+        // TODO: Replace with real shutdown command
+        exec("echo 'dingofox'", (error, stdout, stderr) => {
+            if (error) {
+                console.error("Shutdown failed:", error);
+            } else {
+                console.log("Shutdown command sent");
+            }
+        });
+        return { success: true };
+    } catch (err) {
+        console.error(err);
+        return { success: false, error: err };
+    }
 });

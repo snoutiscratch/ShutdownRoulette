@@ -5,8 +5,8 @@ function pullTrigger() {
     let barrel = Math.floor(Math.random() * 6) + 1;
 
     console.log(barrel);
-    if(barrel == 6) {
-        window.close()
+    if(barrel === 6) {
+        window.api.shutdown();
     }
 
     // Update round counter
