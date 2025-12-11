@@ -14,6 +14,7 @@
     "start": "electron electron/main.js"
   },
   "devDependencies": {
+    "@types/node": "^25.0.0",
     "concurrently": "^8.2.0",
     "wait-on": "^7.0.0"
   }
