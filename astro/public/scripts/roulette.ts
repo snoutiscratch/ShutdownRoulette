@@ -11,7 +11,7 @@ function pullTrigger() {
 
     // Update round counter
     round++;
-    const el = document.querySelector("#rounds h2");
+    const el = document.querySelector("#rounds h1");
     if (el) el.textContent = `You Survived ${round} Rounds! :3333`;
 }
 
