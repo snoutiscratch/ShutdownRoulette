@@ -1,16 +1,24 @@
 ---
-
+import "../styles/main.css";
 ---
 
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
     <meta name="viewport" content="width=device-width"/>
-    <meta name="generator" content={Astro.generator}/>
-    <title>Astro</title>
+    <title>Shutdown Roulette :3</title>
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+    <script type="module" src="/scripts/roulette.ts"></script>
+
 </head>
+
 <body>
-<h1>Shutdown Roulette! :3</h1>
+<div id="rounds">
+    <h2>You Survived 0 Rounds! :3333</h2>
+</div>
+
+<p>Press <strong>Space</strong> to pull the trigger!</p>
 </body>
 </html>
+

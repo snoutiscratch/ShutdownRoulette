@@ -1,0 +1,27 @@
+:root {
+    --color-background: #111;
+    --color-text: #eee;
+    --color-accent: #ff4444;
+    --color-button: #333;
+    --color-button-hover: #555;
+}
+
+
+body {
+    font-family: monospace;
+
+    color: var(--color-text);
+    background-color: var(--color-background);
+
+    /*Center contents*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+#rounds {
+
+}
