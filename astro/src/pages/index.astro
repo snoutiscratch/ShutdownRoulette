@@ -1,24 +1,18 @@
 ---
-import "../styles/main.css";
+import BaseLayout from "../layouts/base.astro"
 ---
 
-<html lang="en">
-<head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width"/>
-    <title>Shutdown Roulette :3</title>
+<BaseLayout>
+    <Fragment slot="head">
+        <title>Shutdown Roulette :3</title>
+        <script type="module" src="/scripts/roulette.ts"></script>
+    </Fragment>
 
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
-    <script type="module" src="/scripts/roulette.ts"></script>
+    <h3><a href="/leaderboard">See Leaderboard</a></h3>
 
-</head>
+    <div id="rounds">
+        <h1>You Survived 0 Rounds! :3333</h1>
+    </div>
 
-<body>
-<div id="rounds">
-    <h2>You Survived 0 Rounds! :3333</h2>
-</div>
-
-<p>PULL THE TRIGGER! >:3 <strong>(Space)</strong></p>
-</body>
-</html>
-
+    <p>PULL THE TRIGGER! >:3 <strong>(Space)</strong></p>
+</BaseLayout>
