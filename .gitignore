@@ -1,0 +1,29 @@
+# Node modules
+node_modules/
+**/node_modules/
+
+# Bun / Yarn / npm lock files
+bun.lockb
+yarn.lock
+package-lock.json
+
+# Astro build output
+astro/dist/
+electron/dist/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# WebStorm
+.idea/
+*.iml
+
+# Temporary
+*.tmp

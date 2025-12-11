@@ -1,0 +1,20 @@
+{
+  "name": "electron-astro-app",
+  "private": true,
+  "workspaces": [
+    "astro"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm:dev:astro\" \"npm:dev:electron\"",
+    "dev:astro": "cd astro && npm run dev",
+    "dev:electron": "wait-on http://localhost:4321 && electron electron/main.js",
+    "build": "npm run build:astro && npm run build:electron",
+    "build:astro": "cd astro && npm run build",
+    "build:electron": "cp -r astro/dist electron/dist",
+    "start": "electron electron/main.js"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "wait-on": "^7.0.0"
+  }
+}
